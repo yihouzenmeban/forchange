@@ -30,7 +30,7 @@ prev : function() {
 ```javascript
 parent : function() {
     var parent = this[0].parentNode;
-    parent && parent.nodeType !== 11 ? parent : null;
+    parent = parent && parent.nodeType !== 11 ? parent : null;
     var a = Kodo();
         a[0] = parent;
         a.selector = parent.tagName.toLocaleLowerCase();
